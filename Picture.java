@@ -19,8 +19,16 @@ public class Picture {
         pic.setBackgroundColor("white");
 
         // Draw my picture
-        Circle c = new Circle();
-        c.makeVisible();
+        Circle veryouterCircle = new Circle("black", 400, 200, 200);
+        veryouterCircle.makeVisible();
+        Circle innerCircle = new Circle("blue", 300, 250, 250);
+        innerCircle.makeVisible();
+        Circle secondCircle = new Circle("red", 200, 300, 300);
+        secondCircle.makeVisible();
+        Circle outerCircle = new Circle("yellow", 100, 350, 350);
+        outerCircle.makeVisible();
+        // YAAAAAAAAAAAAAAAAAAY
+
 
         // Get the filename to save to from the command line arguments, defaulting to
         // MyPicture.png if no argument is given
@@ -29,7 +37,7 @@ public class Picture {
             filename = args[0];
         }
         else {
-            filename = "MyPicture.png";
+            filename = "Bruh.png";
         }
 
         // Save the picture to a file

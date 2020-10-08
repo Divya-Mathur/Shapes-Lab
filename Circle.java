@@ -19,12 +19,12 @@ public class Circle
     /**
      * Create a new circle at default position with default color.
      */
-    public Circle()
+    public Circle(String circleColor, int circleDiameter, int xcord, int ycord)
     {
-        diameter = 68;
-        xPosition = 230;
-        yPosition = 90;
-        color = Canvas.getColor("blue");
+        diameter = circleDiameter;
+        xPosition = xcord;
+        yPosition = ycord;
+        color = Canvas.getColor(circleColor);
     }    
     
     /**

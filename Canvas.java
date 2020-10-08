@@ -92,7 +92,7 @@ public class Canvas {
             canvas = new CanvasPane();
             frame.add(canvas);
             frame.setTitle(title);
-            frame.setLocation(30, 30);
+            frame.setLocation(0, 0);
             canvas.setPreferredSize(new Dimension(width, height));
 
             frame.pack();
